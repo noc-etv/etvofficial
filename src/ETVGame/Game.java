@@ -17,7 +17,7 @@ public class Game
         Room etvhq, corridor, pub, lab, tvstation;
       
         etvhq = new Room("at the ETV headquarter.");
-        corridor = new Room("in the corridor at the ETV headquarter.");
+        corridor = new Room("in the corridor at the ETV headquarters.");
         tvstation = new Room("at the TV station. Congratulations!");
         
         etvhq.setExit("east", corridor);
