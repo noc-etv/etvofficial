@@ -24,14 +24,14 @@ public class Room{
     }
 
     public String getLongDescription(){
-        return "You are " + description + ".\n" + getExitString();
+        return "You're " + description + "\n" + getExitString();
     }
 
     private String getExitString(){
-        String returnString = "These are your exits:";
+        String returnString = "Where do you wanna go? You can go";
         Set<String> keys = exits.keySet();
         for(String exit : keys) {
-            returnString += " " + exit;
+            returnString += " " + exit + ".\n";
         }
         return returnString;
     }

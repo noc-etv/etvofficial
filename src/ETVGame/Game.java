@@ -1,6 +1,6 @@
 package ETVGame;
 
-import java.util.Scanner;
+import java.util.Scanner;                   // Import of Scanner utility in Scanner/util/Java.
 
 
 public class Game 
@@ -20,9 +20,9 @@ public class Game
         corridor = new Room("in the corridor at the ETV headquarter.");
         tvstation = new Room("at the TV station. Congratulations!");
         
-        etvhq.setExit("east", corridor);
+        etvhq.setExit("corridor", corridor);
 
-        corridor.setExit("west", etvhq);
+        corridor.setExit("ETV", etvhq);
 
         currentRoom = etvhq;
     }
@@ -39,10 +39,15 @@ public class Game
     }
 
     private void printWelcome(){
-        System.out.println("Welcome to the ETV Game. Oh, and if you need any help, type '" + CommandWord.HELP + "' ");
+        System.out.println("Welcome to the ETV Game. "
+                + "Oh, and if you need any help, type '" + CommandWord.HELP + "' ");
         System.out.println("Skittles has nothing better to do and he'll be right over!");
+        System.out.println();                   // Empty line.
         System.out.print("Press 'ENTER' to start the game.");
         String start = input.nextLine ();
+        System.out.println();                   // Empty line.
+        System.out.println("COCOA enters the ETV Headquarters.");
+        System.out.println();                   // Empty line.
         System.out.println("COCOA: Noc, how was your weekend?");
         System.out.println();                   // Empty line.
         System.out.println("NOC: Good N*GGA! And you?");
@@ -122,7 +127,7 @@ public class Game
     private void printHelp(){
         System.out.println("Your phone's battery is dead.");
         System.out.println("You have no idea where you are.");
-        System.out.println();
+        System.out.println();                   // Empty line.
         System.out.println("However, your command words are:");
         parser.showCommands();
     }
