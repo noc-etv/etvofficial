@@ -82,7 +82,7 @@ public class Game
         System.out.println();                   // Empty line.
         System.out.println("COCOA: No, thank YOU. You're doing 80 times as much as Skittles ever did.");
         System.out.println("I basically just wanted to tell you that you and Noc are my two main men");
-        System.out.println(" and I want to have a meeting with the both of you later. Conference room at 4 P.M.");
+        System.out.println("and I want to have a meeting with the both of you later. Conference room at 4 P.M.");
         System.out.println();                   // Empty line.
         System.out.println("COCOA: I'll see you then.");
         
